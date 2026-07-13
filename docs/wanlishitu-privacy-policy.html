@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="万里诗图隐私政策 — 离线古诗词学习应用，不收集个人信息。">
+  <title>隐私政策 · 万里诗图</title>
+  <style>
+    :root {
+      --ink: #2c2416;
+      --ink-light: #5c5344;
+      --ink-muted: #8a8070;
+      --parchment: #f7f2e8;
+      --parchment-dark: #ebe3d4;
+      --cinnabar: #b8433a;
+      --jade: #4a7c6f;
+      --gold: #c9a227;
+      --border: rgba(184, 67, 58, 0.15);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      background: var(--parchment);
+      color: var(--ink);
+      line-height: 1.75;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 64px;
+    }
+
+    header {
+      text-align: center;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 36px;
+    }
+
+    .seal {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      height: 56px;
+      border: 2px solid var(--cinnabar);
+      border-radius: 6px;
+      color: var(--cinnabar);
+      font-family: "STKaiti", "Kaiti SC", "KaiTi", serif;
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 16px;
+      opacity: 0.9;
+    }
+
+    h1 {
+      font-family: "STKaiti", "Kaiti SC", "KaiTi", serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--ink);
+      letter-spacing: 0.08em;
+      margin-bottom: 12px;
+    }
+
+    .meta {
+      font-size: 0.875rem;
+      color: var(--ink-muted);
+    }
+
+    .meta span + span::before {
+      content: "·";
+      margin: 0 8px;
+      opacity: 0.5;
+    }
+
+    .lead {
+      background: rgba(184, 67, 58, 0.06);
+      border-left: 3px solid var(--cinnabar);
+      padding: 20px 22px;
+      border-radius: 0 8px 8px 0;
+      margin-bottom: 36px;
+      font-size: 0.9375rem;
+      color: var(--ink-light);
+    }
+
+    .lead strong { color: var(--ink); }
+
+    section {
+      margin-bottom: 36px;
+    }
+
+    h2 {
+      font-family: "STKaiti", "Kaiti SC", "KaiTi", serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 14px;
+      padding-left: 12px;
+      border-left: 3px solid var(--cinnabar);
+    }
+
+    h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin: 20px 0 10px;
+    }
+
+    p { margin-bottom: 12px; color: var(--ink-light); }
+
+    ul, ol {
+      margin: 0 0 14px 1.25rem;
+      color: var(--ink-light);
+    }
+
+    li { margin-bottom: 6px; }
+
+    strong { color: var(--ink); font-weight: 600; }
+
+    .table-wrap {
+      overflow-x: auto;
+      margin: 16px 0;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: #fff;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.875rem;
+    }
+
+    th, td {
+      padding: 10px 14px;
+      text-align: left;
+      border-bottom: 1px solid var(--parchment-dark);
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--parchment-dark);
+      color: var(--ink);
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    tr:last-child td { border-bottom: none; }
+
+    blockquote {
+      margin: 16px 0;
+      padding: 14px 18px;
+      background: rgba(74, 124, 111, 0.08);
+      border-radius: 8px;
+      font-size: 0.875rem;
+      color: var(--ink-light);
+      border-left: 3px solid var(--jade);
+    }
+
+    code {
+      font-family: "SF Mono", Menlo, monospace;
+      font-size: 0.8125rem;
+      background: var(--parchment-dark);
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: var(--cinnabar);
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 32px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-size: 0.8125rem;
+      color: var(--ink-muted);
+      font-family: "STKaiti", "Kaiti SC", "KaiTi", serif;
+    }
+
+    a { color: var(--cinnabar); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    @media (max-width: 600px) {
+      .page { padding: 32px 16px 48px; }
+      h1 { font-size: 1.625rem; }
+      th, td { padding: 8px 10px; font-size: 0.8125rem; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <div class="seal" aria-hidden="true">万</div>
+      <h1>万里诗图 隐私政策</h1>
+      <p class="meta">
+        <span>生效日期：2026 年 7 月 11 日</span>
+        <span>最后更新：2026 年 7 月 11 日</span>
+      </p>
+    </header>
+
+    <div class="lead">
+      <p>欢迎使用「万里诗图」（以下简称「本应用」或「我们」）。本应用是一款面向少年儿童的古诗词离线学习工具，由独立开发者运营并发布于 Apple App Store。</p>
+      <p style="margin-bottom:0">我们深知个人信息与儿童隐私的重要性。<strong>本应用的核心承诺是：不建立用户账号、不收集个人信息、不上传学习数据、不展示广告、不接入第三方数据分析或广告 SDK。</strong></p>
+    </div>
+
+    <p>请您（及作为监护人的家长）在使用前仔细阅读本政策。下载、安装或使用本应用，即表示您已阅读并理解本政策的全部内容。</p>
+
+    <section>
+      <h2>一、适用范围</h2>
+      <p>本政策适用于：</p>
+      <ul>
+        <li>iOS 版「万里诗图」应用及其后续版本；</li>
+        <li>通过 App Store 提供的全部功能与服务。</li>
+      </ul>
+      <p>本政策不适用于 Apple 公司提供的系统服务（如 App Store 评分、系统相册、系统分享面板等），该等服务适用 Apple 各自的隐私政策。</p>
+    </section>
+
+    <section>
+      <h2>二、我们收集的信息</h2>
+
+      <h3>2.1 我们不向开发者收集任何个人信息</h3>
+      <p><strong>我们不会主动收集、存储、上传或向任何第三方提供下列信息：</strong></p>
+      <ul>
+        <li>姓名、身份证号、电话号码、电子邮箱、住址等身份标识信息；</li>
+        <li>精确或粗略地理位置；</li>
+        <li>设备唯一标识符、广告标识符（IDFA）；</li>
+        <li>浏览记录、搜索记录、点击行为等用于用户画像的数据；</li>
+        <li>通讯录、日历、健康、生物识别等敏感信息；</li>
+        <li>任何用于跨应用追踪或定向广告的数据。</li>
+      </ul>
+      <p>在 App Store Connect 的「App 隐私」问卷中，本应用对应选项为：<strong>开发者不会从此 App 中收集任何数据</strong>。</p>
+
+      <h3>2.2 本机仅存的学习数据（不上传）</h3>
+      <p>为提供离线学习功能，本应用会在<strong>您的设备本地</strong>保存以下数据，<strong>这些数据不会离开您的设备，也不会同步至任何服务器</strong>：</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>数据类型</th>
+              <th>用途</th>
+              <th>存储位置</th>
+              <th>清除方式</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>诗号（昵称）</td>
+              <td>个人化展示、题跋署名</td>
+              <td>本机 UserDefaults</td>
+              <td>卸载 App 或清除全部进度</td>
+            </tr>
+            <tr>
+              <td>学习进度</td>
+              <td>已探索诗词、掌握程度</td>
+              <td>本机 UserDefaults / 本地数据库</td>
+              <td>设置 → 卷宗 → 清除全部进度</td>
+            </tr>
+            <tr>
+              <td>答题与复习记录</td>
+              <td>SM-2 科学复习、错题回顾</td>
+              <td>本机本地数据库</td>
+              <td>同上</td>
+            </tr>
+            <tr>
+              <td>徽章与成就</td>
+              <td>激励学习</td>
+              <td>本机 UserDefaults</td>
+              <td>同上</td>
+            </tr>
+            <tr>
+              <td>收藏与每日任务</td>
+              <td>个性化推荐与任务</td>
+              <td>本机 UserDefaults</td>
+              <td>同上</td>
+            </tr>
+            <tr>
+              <td>对战战绩</td>
+              <td>本地闯关记录</td>
+              <td>本机 UserDefaults</td>
+              <td>同上</td>
+            </tr>
+            <tr>
+              <td>头像图片</td>
+              <td>个人资料展示</td>
+              <td>本机应用沙盒</td>
+              <td>卸载 App</td>
+            </tr>
+            <tr>
+              <td>崩溃诊断摘要</td>
+              <td>改进应用稳定性</td>
+              <td>本机 Documents 目录</td>
+              <td>卸载 App</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <blockquote>
+        <strong>说明：</strong>上述数据由您在使用中自愿产生，仅用于本机功能实现，<strong>不构成我们向用户「收集」个人信息的行为</strong>，亦不会用于识别特定自然人。
+      </blockquote>
+    </section>
+
+    <section>
+      <h2>三、设备权限说明</h2>
+      <p>本应用可能在您主动使用相关功能时，请求以下系统权限：</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>权限</th>
+              <th>触发场景</th>
+              <th>是否必须</th>
+              <th>数据去向</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>相册（读取）</strong></td>
+              <td>更换小诗人头像</td>
+              <td>否，可拒绝</td>
+              <td>仅读取您选中的图片，存于本机沙盒，不上传</td>
+            </tr>
+            <tr>
+              <td><strong>相册（写入）</strong></td>
+              <td>保存诗词海报至相册</td>
+              <td>否，可拒绝</td>
+              <td>仅将您生成的海报图片写入系统相册</td>
+            </tr>
+            <tr>
+              <td><strong>网络访问</strong></td>
+              <td>跳转 App Store 评分（系统弹窗）</td>
+              <td>否</td>
+              <td>由 Apple 系统处理，本应用不发起数据采集请求</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>除上述情形外，本应用<strong>不需要</strong>定位、相机、麦克风、通讯录、蓝牙等权限。</p>
+      <p>您可随时在 iOS <strong>设置 → 隐私与安全性</strong> 中撤销相册权限；撤销后相关功能将不可用，但不影响其他离线学习功能。</p>
+    </section>
+
+    <section>
+      <h2>四、网络与第三方服务</h2>
+
+      <h3>4.1 基本离线原则</h3>
+      <p>本应用的核心学习功能（诗词阅读、地图探索、答题复习、成语学习等）<strong>均可完全离线使用</strong>，无需联网。</p>
+
+      <h3>4.2 可能涉及网络的有限场景</h3>
+      <ul>
+        <li><strong>App Store 评分：</strong>您在「为本卷题字」中触发评分时，由 <strong>Apple 系统</strong> 弹出官方评分窗口，本应用不借此采集任何数据。</li>
+        <li><strong>系统分享：</strong>分享诗词海报时，由 <strong>iOS 系统分享面板</strong> 处理，本应用仅提供您主动生成的图片与文字，不监控分享去向。</li>
+      </ul>
+
+      <h3>4.3 第三方 SDK</h3>
+      <p>本应用<strong>不集成</strong>任何第三方统计、广告、推送、社交登录或用户行为分析 SDK。</p>
+      <p>本应用使用的均为 Apple 官方框架，包括但不限于：SwiftUI、AVFoundation（诗词朗读）、SQLite（本地数据库）、StoreKit（一次性购买验证）、MetricKit（本地崩溃诊断，见下文）。</p>
+    </section>
+
+    <section>
+      <h2>五、崩溃诊断与 Required Reason API</h2>
+
+      <h3>5.1 MetricKit 本地诊断</h3>
+      <p>为改善应用稳定性，本应用使用 Apple <strong>MetricKit</strong> 框架接收系统提供的匿名崩溃诊断摘要，并<strong>仅保存在本机 Documents 目录</strong>，最多保留最近 5 份，<strong>不会上传至开发者服务器或任何第三方</strong>。</p>
+
+      <h3>5.2 隐私清单（Privacy Manifest）</h3>
+      <p>本应用已配置 <code>PrivacyInfo.xcprivacy</code>，声明如下：</p>
+      <ul>
+        <li><strong>NSPrivacyTracking：</strong>否（不进行跨 App 追踪）</li>
+        <li><strong>NSPrivacyCollectedDataTypes：</strong>无（不声明向用户收集的数据类型）</li>
+        <li><strong>Required Reason API：</strong>仅使用 UserDefaults（CA92.1）、文件时间戳（C617.1），用于本机功能实现</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>六、儿童隐私保护</h2>
+      <p>本应用主要面向 <strong>4 岁及以上</strong> 少年儿童及其家长/监护人使用。</p>
+      <p>我们特别承诺：</p>
+      <ol>
+        <li><strong>不要求儿童注册账号或提供真实姓名、联系方式；</strong></li>
+        <li><strong>不收集儿童个人信息，不向第三方披露；</strong></li>
+        <li><strong>不展示广告，不含不当外部链接；</strong></li>
+        <li><strong>不利用儿童数据进行用户画像或商业营销。</strong></li>
+      </ol>
+      <p>我们鼓励家长/监护人：</p>
+      <ul>
+        <li>陪同儿童使用本应用，了解学习内容与进度；</li>
+        <li>通过「清除全部进度」管理本机数据；</li>
+        <li>在 App Store 购买与下载时，使用家庭共享等 Apple 提供的家长管控功能。</li>
+      </ul>
+      <p>本应用的隐私实践旨在符合《中华人民共和国个人信息保护法》《儿童个人信息网络保护规定》以及 Apple App Store 对儿童类应用的相关要求。</p>
+    </section>
+
+    <section>
+      <h2>七、数据安全</h2>
+      <ul>
+        <li>所有学习数据均存储于 iOS 应用沙盒，受系统级隔离保护；</li>
+        <li>本应用不建立远程数据库，不存在服务器侧数据泄露风险；</li>
+        <li>我们不向任何第三方出售、出租或交易用户数据（因为我们不收集此类数据）。</li>
+      </ul>
+      <p>请您妥善保管设备，避免他人未经授权访问。卸载本应用将删除其沙盒内的全部数据（已保存至系统相册的海报图片除外）。</p>
+    </section>
+
+    <section>
+      <h2>八、您的权利</h2>
+      <p>您对本机数据享有完全控制权：</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>权利</th>
+              <th>操作方式</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>查看学习进度</td>
+              <td>应用内「诗图」「探索」「论诗」「我的」等页面</td>
+            </tr>
+            <tr>
+              <td>修改诗号（昵称）</td>
+              <td>设置 → 修改诗号</td>
+            </tr>
+            <tr>
+              <td>导出学习档案</td>
+              <td>设置 → 卷宗 → 导出 JSON</td>
+            </tr>
+            <tr>
+              <td>清除全部进度</td>
+              <td>设置 → 卷宗 → 清除全部进度</td>
+            </tr>
+            <tr>
+              <td>撤销相册权限</td>
+              <td>iOS 设置 → 隐私与安全性 → 照片 → 万里诗图</td>
+            </tr>
+            <tr>
+              <td>删除全部应用数据</td>
+              <td>卸载本应用</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>如需就隐私问题联系我们，请通过 App Store 应用页面的「App 支持」或开发者联系邮箱（见下文）与我们沟通。</p>
+    </section>
+
+    <section>
+      <h2>九、政策变更</h2>
+      <p>我们可能因功能更新、法律法规变化或 Apple 平台要求而修订本政策。重大变更将通过以下方式告知：</p>
+      <ul>
+        <li>在新版本 App 的更新说明中提示；</li>
+        <li>更新本页面顶部的「最后更新」日期。</li>
+      </ul>
+      <p>若您在政策变更后继续使用本应用，即视为接受修订后的政策。若您不同意，请停止使用并卸载本应用。</p>
+    </section>
+
+    <section>
+      <h2>十、联系我们</h2>
+      <p>如您对本隐私政策有任何疑问、意见或投诉，请通过以下方式联系：</p>
+      <ul>
+        <li><strong>应用名称：</strong>万里诗图</li>
+        <li><strong>联系邮箱：</strong><a href="mailto:developer@example.com">developer@example.com</a>（请替换为真实邮箱）</li>
+        <li><strong>App Store：</strong>在 App Store 应用页面点击「App 支持」留言</li>
+      </ul>
+      <p>我们将在合理期限内（通常为 15 个工作日内）予以回复。</p>
+    </section>
+
+    <section>
+      <h2>附录：App Store 隐私标签对照</h2>
+      <p>供 App Store Connect 填写参考：</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>问卷项</th>
+              <th>选择</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>是否从此 App 收集数据？</td>
+              <td><strong>否</strong></td>
+            </tr>
+            <tr>
+              <td>是否用于追踪？</td>
+              <td><strong>否</strong></td>
+            </tr>
+            <tr>
+              <td>第三方合作伙伴</td>
+              <td><strong>无</strong></td>
+            </tr>
+            <tr>
+              <td>公开页显示文案</td>
+              <td><strong>开发者不会从此 App 中收集任何数据。</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 万里诗图 · 一字不取，一痕不留</p>
+    </footer>
+  </main>
+</body>
+</html>
